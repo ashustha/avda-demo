@@ -587,13 +587,13 @@ p:last-child {
 }
 
 .portfolio {
-  padding-top: 33px;
-  padding-bottom: 76px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .portfolio__header {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 29px;
+  margin-bottom: 20px;
   align-items: self-start;
   flex-direction: column;
 }
@@ -604,7 +604,7 @@ p:last-child {
   }
 }
 .portfolio__header h3 {
-  margin-bottom: 30px;
+  margin-bottom: 3s0px;
 }
 @media (min-width: 992px) {
   .portfolio__header h3 {
@@ -1041,7 +1041,7 @@ p:last-child {
   padding-top: 100px;
   padding-bottom: 100px;
 }
-@media (min-width: 992px) {
+@media (min-width: 1704px) {
   .solving-complex-problem {
     padding-bottom: 253px;
   }
@@ -1164,10 +1164,10 @@ p:last-child {
 }
 .card-a01__header h4 {
   text-transform: uppercase;
-  margin-bottom: 14px;
+  margin-bottom: 10px;
   font-weight: 700;
-  font-size: 22px;
-  line-height: 32px;
+  font-size: 18px;
+  line-height: 28px;
   letter-spacing: 1.2px;
 }
 @media (min-width: 1704px) {
@@ -1179,7 +1179,7 @@ p:last-child {
 }
 .card-a01__header p {
   font-size: 16px;
-  line-height: 31px;
+  line-height: 24px;
   color: #8E8E93;
 }
 @media (min-width: 1704px) {
@@ -1188,8 +1188,8 @@ p:last-child {
   }
 }
 .card-a01__body {
-  padding-top: 30px;
-  padding-bottom: 37px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 @media (min-width: 1704px) {
   .card-a01__body {
@@ -1212,7 +1212,14 @@ p:last-child {
 .card-a01__body p {
   color: #8E8E93;
   padding-bottom: 18px;
-  font-size: 16px;
+  font-size: 14px;
+  line-height: 18px;
+}
+@media (min-width: 1704px) {
+  .card-a01__body p {
+    font-size: 18px;
+    line-height: 28px;
+  }
 }
 .card-a01__body p:last-child {
   padding-bottom: 0px;
