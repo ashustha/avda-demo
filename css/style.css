@@ -264,8 +264,8 @@ h3, .h3 {
 }
 @media (min-width: 1200px) {
   h3, .h3 {
-    font-size: 45px;
-    line-height: 85px;
+    font-size: 40px;
+    line-height: 60px;
   }
 }
 @media (min-width: 1704px) {
@@ -1132,7 +1132,7 @@ p:last-child {
 }
 
 .card-a01 {
-  padding: 30px 30px 30px 30px;
+  padding: 20px;
 }
 @media (min-width: 1704px) {
   .card-a01 {
@@ -1140,8 +1140,13 @@ p:last-child {
   }
 }
 .card-a01__header {
-  padding-bottom: 40px;
+  padding-bottom: 20px;
   position: relative;
+}
+@media (min-width: 1704px) {
+  .card-a01__header {
+    padding-bottom: 40px;
+  }
 }
 .card-a01__header::after {
   position: absolute;
@@ -1149,7 +1154,7 @@ p:last-child {
   height: 8px;
   width: 357px;
   background-color: #ffffff;
-  left: -30px;
+  left: -20px;
   bottom: 0;
 }
 @media (min-width: 1704px) {
@@ -1173,9 +1178,14 @@ p:last-child {
   }
 }
 .card-a01__header p {
-  font-size: 21px;
+  font-size: 16px;
   line-height: 31px;
   color: #8E8E93;
+}
+@media (min-width: 1704px) {
+  .card-a01__header p {
+    font-size: 21px;
+  }
 }
 .card-a01__body {
   padding-top: 30px;
@@ -1197,11 +1207,12 @@ p:last-child {
   }
 }
 .card-a01__body-logo img {
-  width: 200px;
+  width: 150px;
 }
 .card-a01__body p {
   color: #8E8E93;
-  padding-bottom: 36px;
+  padding-bottom: 18px;
+  font-size: 16px;
 }
 .card-a01__body p:last-child {
   padding-bottom: 0px;
