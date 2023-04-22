@@ -531,7 +531,7 @@ p:last-child {
 }
 @media (min-width: 1200px) {
   .footer_body {
-    margin-bottom: 120px;
+    margin-bottom: 100px;
   }
 }
 @media (min-width: 1704px) {
@@ -764,10 +764,10 @@ p:last-child {
   left: 20px;
 }
 .our-investments__lists .logos figure {
-  margin-bottom: 150px;
+  margin-bottom: 120px;
   position: relative;
 }
-@media (min-width: 1200px) {
+@media (min-width: 1704px) {
   .our-investments__lists .logos figure {
     margin-bottom: 170px;
   }
@@ -1132,7 +1132,12 @@ p:last-child {
 }
 
 .card-a01 {
-  padding: 54px 32px 43px 51px;
+  padding: 30px 30px 30px 30px;
+}
+@media (min-width: 1704px) {
+  .card-a01 {
+    padding: 54px 32px 43px 51px;
+  }
 }
 .card-a01__header {
   padding-bottom: 40px;
@@ -1144,19 +1149,26 @@ p:last-child {
   height: 8px;
   width: 357px;
   background-color: #ffffff;
-  left: -51px;
+  left: -30px;
   bottom: 0;
+}
+@media (min-width: 1704px) {
+  .card-a01__header::after {
+    left: -51px;
+  }
 }
 .card-a01__header h4 {
   text-transform: uppercase;
   margin-bottom: 14px;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 47px;
-  letter-spacing: -0.8px;
+  font-size: 22px;
+  line-height: 32px;
+  letter-spacing: 1.2px;
 }
 @media (min-width: 1704px) {
   .card-a01__header h4 {
+    line-height: 47px;
+    letter-spacing: -0.8px;
     font-size: 32px;
   }
 }
@@ -1166,8 +1178,13 @@ p:last-child {
   color: #8E8E93;
 }
 .card-a01__body {
-  padding-top: 60px;
+  padding-top: 30px;
   padding-bottom: 37px;
+}
+@media (min-width: 1704px) {
+  .card-a01__body {
+    padding-top: 60px;
+  }
 }
 .card-a01__body-logo {
   display: flex;
@@ -1178,6 +1195,9 @@ p:last-child {
   .card-a01__body-logo {
     flex-direction: row;
   }
+}
+.card-a01__body-logo img {
+  width: 200px;
 }
 .card-a01__body p {
   color: #8E8E93;
