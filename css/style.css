@@ -604,7 +604,7 @@ p:last-child {
   }
 }
 .portfolio__header h3 {
-  margin-bottom: 3s0px;
+  margin-bottom: 30px;
 }
 @media (min-width: 992px) {
   .portfolio__header h3 {
@@ -645,6 +645,7 @@ p:last-child {
 .navbar__wrapper {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .navbar__wrapper .nav-list {
   display: flex;
@@ -688,6 +689,94 @@ p:last-child {
 }
 .navbar__wrapper .nav-logo-right {
   margin-left: auto;
+  display: none;
+}
+@media (min-width: 992px) {
+  .navbar__wrapper .nav-logo-right {
+    display: inline-block;
+  }
+}
+.navbar__wrapper #toggle-menu {
+  all: unset;
+  position: relative;
+  height: 2px;
+  width: 30px;
+  background-color: #ffffff;
+  cursor: pointer;
+  display: block;
+}
+@media (min-width: 992px) {
+  .navbar__wrapper #toggle-menu {
+    display: none;
+  }
+}
+.navbar__wrapper #toggle-menu::before {
+  position: absolute;
+  content: "";
+  background-color: #ffffff;
+  top: -10px;
+  left: 0;
+  height: 2px;
+  width: 100%;
+}
+.navbar__wrapper #toggle-menu::after {
+  position: absolute;
+  content: "";
+  background-color: #ffffff;
+  bottom: -10px;
+  left: 0;
+  height: 2px;
+  width: 100%;
+}
+.navbar__wrapper #menu {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  color: #fff;
+  padding: 2rem;
+  z-index: 9999;
+}
+.navbar__wrapper #menu #close-menu {
+  all: unset;
+  position: absolute;
+  height: 2px;
+  width: 30px;
+  cursor: pointer;
+  bottom: 80px;
+  right: 65px;
+  cursor: pointer;
+}
+.navbar__wrapper #menu #close-menu::before {
+  position: absolute;
+  content: "";
+  background-color: #ffffff;
+  top: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  transform: rotate(-45deg);
+}
+.navbar__wrapper #menu #close-menu::after {
+  position: absolute;
+  content: "";
+  background-color: #ffffff;
+  top: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  transform: rotate(45deg);
+}
+.navbar__wrapper #menu ul {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.navbar__wrapper #menu ul li {
+  padding: 13px 0;
 }
 
 .our-investments {
@@ -1165,10 +1254,15 @@ p:last-child {
   position: absolute;
   content: "";
   height: 8px;
-  width: 357px;
+  width: 200px;
   background-color: #ffffff;
   left: -20px;
   bottom: 0;
+}
+@media (min-width: 1200px) {
+  .card-a01__header::after {
+    width: 357px;
+  }
 }
 @media (min-width: 1704px) {
   .card-a01__header::after {
