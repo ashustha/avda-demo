@@ -846,8 +846,14 @@ p:last-child {
   transform: translateX(-10px);
 }
 .paraWithLogo__body {
-  padding-top: 148px;
-  padding-bottom: 254px;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+@media (min-width: 1704px) {
+  .paraWithLogo__body {
+    padding-top: 80px;
+    padding-bottom: 150px;
+  }
 }
 .paraWithLogo__body img {
   padding-bottom: 18px;
@@ -857,8 +863,14 @@ p:last-child {
   max-width: 1568px;
   font-style: italic;
   font-weight: 500;
-  font-size: 30px;
-  line-height: 44px;
+  font-size: 23px;
+  line-height: 33px;
+}
+@media (min-width: 1704px) {
+  .paraWithLogo__body p {
+    font-size: 30px;
+    line-height: 44px;
+  }
 }
 .paraWithLogo__body a {
   font-style: normal;
@@ -868,7 +880,7 @@ p:last-child {
 }
 .paraWithLogo__footer .logo-list {
   border-top: 1px solid #E8E8E8;
-  padding-top: 54px;
+  padding-top: 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -886,6 +898,7 @@ p:last-child {
 }
 @media (min-width: 1704px) {
   .paraWithLogo__footer .logo-list {
+    padding-top: 54px;
     gap: 70px;
   }
 }
@@ -1363,33 +1376,46 @@ p:last-child {
   letter-spacing: -1.1px;
   margin-bottom: 24px;
 }
-.card-a07__header p {
+@media (min-width: 1704px) {
+  .card-a07__header h4 {
+    font-size: 44px;
+    line-height: 65px;
+  }
+}
+.card-a07__header h4 p {
   font-weight: 400;
   font-size: 21px;
   line-height: 31px;
   color: #8E8E93;
 }
-.card-a07__body {
-  padding-top: 56px;
+.card-a07__header__body {
+  padding-top: 36px;
   padding-bottom: 37px;
 }
-.card-a07__body-logo {
+@media (min-width: 1704px) {
+  .card-a07__header__body {
+    padding-top: 56px;
+    padding-bottom: 37px;
+  }
+}
+.card-a07__header__body-logo {
   display: flex;
   gap: 28px;
 }
-.card-a07__body h5 {
+.card-a07__header__body h5 {
   font-weight: 700;
   font-size: 22px;
   line-height: 32px;
   color: #000000;
 }
-.card-a07__body p {
+.card-a07__header__body p {
   color: #8E8E93;
-  padding-bottom: 36px;
+  padding-bottom: 20px;
   font-size: 20px;
   line-height: 30px;
   max-width: 603px;
+  padding-bottom: 36px;
 }
-.card-a07__body p:last-child {
+.card-a07__header__body:last-child {
   padding-bottom: 0px;
 }
