@@ -697,11 +697,6 @@ p:last-child {
   }
 }
 .navbar__wrapper #toggle-menu {
-  all: unset;
-  position: relative;
-  height: 2px;
-  width: 30px;
-  background-color: #ffffff;
   cursor: pointer;
   display: block;
 }
@@ -710,28 +705,10 @@ p:last-child {
     display: none;
   }
 }
-.navbar__wrapper #toggle-menu::before {
-  position: absolute;
-  content: "";
-  background-color: #ffffff;
-  top: -10px;
-  left: 0;
-  height: 2px;
-  width: 100%;
-}
-.navbar__wrapper #toggle-menu::after {
-  position: absolute;
-  content: "";
-  background-color: #ffffff;
-  bottom: -10px;
-  left: 0;
-  height: 2px;
-  width: 100%;
-}
 .navbar__wrapper #menu {
   position: fixed;
   top: 0;
-  left: -100%;
+  left: -200%;
   width: 100%;
   height: 100%;
   background-color: #000000;
@@ -740,34 +717,10 @@ p:last-child {
   z-index: 9999;
 }
 .navbar__wrapper #menu #close-menu {
-  all: unset;
   position: absolute;
-  height: 2px;
-  width: 30px;
-  cursor: pointer;
   bottom: 80px;
   right: 65px;
   cursor: pointer;
-}
-.navbar__wrapper #menu #close-menu::before {
-  position: absolute;
-  content: "";
-  background-color: #ffffff;
-  top: 0;
-  left: 0;
-  height: 2px;
-  width: 100%;
-  transform: rotate(-45deg);
-}
-.navbar__wrapper #menu #close-menu::after {
-  position: absolute;
-  content: "";
-  background-color: #ffffff;
-  top: 0;
-  left: 0;
-  height: 2px;
-  width: 100%;
-  transform: rotate(45deg);
 }
 .navbar__wrapper #menu ul {
   height: 100vh;
