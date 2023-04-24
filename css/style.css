@@ -316,6 +316,7 @@ body {
     width: 100vw;
     display: flex;
     flex-shrink: 0;
+    overflow: hidden;
   }
 }
 a {
@@ -1373,11 +1374,16 @@ p:last-child {
 }
 
 .job-post {
-  padding: 25px 24px 36px 26px;
+  padding: 25px;
   border: 1px solid #D5D5D5;
-  padding-bottom: 58px;
   border-bottom: 1px solid #D5D5D5;
   position: relative;
+}
+@media (min-width: 1704px) {
+  .job-post {
+    padding: 25px 24px 36px 26px;
+    padding-bottom: 58px;
+  }
 }
 .job-post .btn {
   position: absolute;
@@ -1392,19 +1398,31 @@ p:last-child {
 }
 .job-post__body h5 {
   font-weight: 700;
-  font-size: 30px;
-  line-height: 44px;
+  font-size: 20px;
+  line-height: 24px;
   margin-bottom: 7px;
+}
+@media (min-width: 1704px) {
+  .job-post__body h5 {
+    font-size: 30px;
+    line-height: 44px;
+  }
 }
 .job-post__body p {
   color: #9E9E9E;
-  font-size: 22px;
-  line-height: 32px;
+  font-size: 18px;
+  line-height: 28px;
   display: -webkit-box;
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+@media (min-width: 1704px) {
+  .job-post__body p {
+    font-size: 22px;
+    line-height: 32px;
+  }
 }
 .job-post__items {
   gap: 42px;
@@ -1415,9 +1433,16 @@ p:last-child {
   gap: 10px;
 }
 .job-post__items .item p {
-  font-size: 22px;
-  line-height: 32px;
+  font-size: 16px;
+  line-height: 22px;
   color: #9E9E9E;
+  white-space: nowrap;
+}
+@media (min-width: 1704px) {
+  .job-post__items .item p {
+    font-size: 22px;
+    line-height: 32px;
+  }
 }
 
 .news {
