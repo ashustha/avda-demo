@@ -236,8 +236,8 @@ h2, .h2 {
 }
 @media (min-width: 1200px) {
   h2, .h2 {
-    font-size: 120px;
-    line-height: 130px;
+    font-size: 100px;
+    line-height: 110px;
   }
 }
 @media (min-width: 1704px) {
@@ -376,28 +376,29 @@ p:last-child {
   max-width: 1704px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 20px; /* optional: add some padding to the sides */
   box-sizing: border-box;
+  padding: 0 20px;
+  padding-right: 40px;
 }
 
 .leadspace {
   background-color: #000000;
   color: #ffffff;
 }
-.leadspace_body {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  height: 100%;
-  padding-bottom: 40px;
+@media only screen and (max-width: 1200px) {
+  .leadspace_body {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
 }
 .leadspace_body-text {
-  padding-bottom: 150px;
-  padding-top: 150px;
+  margin-bottom: 80px;
+  margin-top: 80px;
 }
-@media (min-width: 1704px) {
+@media (min-width: 1200px) {
   .leadspace_body-text {
-    padding-bottom: 347px;
+    margin-bottom: 150px;
+    margin-top: 150px;
   }
 }
 .leadspace_body-text p {
@@ -417,6 +418,11 @@ p:last-child {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 18px;
+}
+@media (min-width: 1704px) {
+  .leadspace_body-buttons {
+    margin-top: 347px;
+  }
 }
 @media (min-width: 1704px) {
   .leadspace_body-buttons {
@@ -518,13 +524,17 @@ p:last-child {
 }
 @media (min-width: 1200px) {
   .footer .h2 {
-    margin-bottom: 120px;
+    margin-bottom: 100px;
   }
 }
 @media (min-width: 1704px) {
   .footer .h2 {
     margin-bottom: 157px;
   }
+}
+.footer .h2 span {
+  display: block;
+  width: 100%;
 }
 .footer_body {
   margin-bottom: 100px;
@@ -554,6 +564,13 @@ p:last-child {
 }
 @media (min-width: 1200px) {
   .footer_body p {
+    font-size: 30px;
+    line-height: 35px;
+  }
+}
+@media (min-width: 1704px) {
+  .footer_body p {
+    line-height: 59px;
     font-size: 40px;
   }
 }
@@ -1092,13 +1109,10 @@ p:last-child {
   color: #9E9E9E;
 }
 
-.solving-complex-problem {
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-@media (min-width: 1704px) {
+@media only screen and (max-width: 1200px) {
   .solving-complex-problem {
-    padding-bottom: 253px;
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
 }
 .solving-complex-problem p {
@@ -1109,7 +1123,13 @@ p:last-child {
   max-width: 786px;
   margin-bottom: 9px;
 }
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
+  .solving-complex-problem p {
+    font-size: 20px;
+    line-height: 39px;
+  }
+}
+@media (min-width: 1704px) {
   .solving-complex-problem p {
     font-size: 40px;
     line-height: 59px;
@@ -1127,10 +1147,59 @@ p:last-child {
   font-size: 28px;
   line-height: 38px;
 }
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
+  .solving-complex-problem h4 {
+    font-size: 28px;
+    line-height: 45px;
+  }
+}
+@media (min-width: 1704px) {
   .solving-complex-problem h4 {
     font-size: 48px;
     line-height: 65px;
+  }
+}
+.solving-complex-problem .line {
+  font-style: italic;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 37px;
+  max-width: 100%;
+  overflow: hidden;
+  display: block;
+  padding-right: 50px;
+  width: 100%;
+}
+@media (min-width: 1200px) {
+  .solving-complex-problem .line {
+    white-space: nowrap;
+    font-size: 22px;
+    line-height: 27px;
+  }
+}
+@media (min-width: 1704px) {
+  .solving-complex-problem .line {
+    white-space: nowrap;
+    font-size: 32px;
+    line-height: 47px;
+  }
+}
+.solving-complex-problem .marquee {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.solving-complex-problem .clients {
+  margin-top: 83px;
+}
+@media (min-width: 1200px) {
+  .solving-complex-problem .clients {
+    margin-top: 120px;
+  }
+}
+@media (min-width: 1704px) {
+  .solving-complex-problem .clients {
+    margin-top: 253px;
   }
 }
 
@@ -1429,33 +1498,33 @@ p:last-child {
     line-height: 65px;
   }
 }
-.card-a07__header h4 p {
+.card-a07__header p {
   font-weight: 400;
   font-size: 21px;
   line-height: 31px;
   color: #8E8E93;
 }
-.card-a07__header__body {
+.card-a07__body {
   padding-top: 36px;
   padding-bottom: 37px;
 }
 @media (min-width: 1704px) {
-  .card-a07__header__body {
+  .card-a07__body {
     padding-top: 56px;
     padding-bottom: 37px;
   }
 }
-.card-a07__header__body-logo {
+.card-a07__body-logo {
   display: flex;
   gap: 28px;
 }
-.card-a07__header__body h5 {
+.card-a07__body h5 {
   font-weight: 700;
   font-size: 22px;
   line-height: 32px;
   color: #000000;
 }
-.card-a07__header__body p {
+.card-a07__body p {
   color: #8E8E93;
   padding-bottom: 20px;
   font-size: 20px;
@@ -1463,6 +1532,6 @@ p:last-child {
   max-width: 603px;
   padding-bottom: 36px;
 }
-.card-a07__header__body:last-child {
+.card-a07__body p:last-child {
   padding-bottom: 0px;
 }

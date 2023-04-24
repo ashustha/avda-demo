@@ -1,0 +1,1 @@
+gsap.registerPlugin(ScrollTrigger),gsap.fromTo(".top",{x:-300},{x:300,duration:5,repeat:-1,yoyo:!0,ease:"power1.inOut"}),gsap.fromTo(".middle",{x:300},{x:-300,duration:5,repeat:-1,yoyo:!0,ease:"power1.inOut"}),gsap.fromTo(".bottom",{x:-300},{x:300,duration:5,repeat:-1,yoyo:!0,ease:"power1.inOut"});
