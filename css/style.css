@@ -1515,8 +1515,8 @@ p:last-child {
 .card-a07__header h4 {
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 44px;
-  line-height: 65px;
+  font-size: 30px;
+  line-height: 40px;
   letter-spacing: -1.1px;
   margin-bottom: 24px;
 }
@@ -1528,9 +1528,15 @@ p:last-child {
 }
 .card-a07__header p {
   font-weight: 400;
-  font-size: 21px;
-  line-height: 31px;
+  font-size: 18px;
+  line-height: 28px;
   color: #8E8E93;
+}
+@media (min-width: 1704px) {
+  .card-a07__header p {
+    font-size: 21px;
+    line-height: 31px;
+  }
 }
 .card-a07__body {
   padding-top: 36px;
@@ -1556,11 +1562,17 @@ p:last-child {
 .card-a07__body p {
   color: #8E8E93;
   padding-bottom: 20px;
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 18px;
+  line-height: 28px;
   max-width: 603px;
   padding-bottom: 36px;
 }
 .card-a07__body p:last-child {
   padding-bottom: 0px;
+}
+@media (min-width: 1704px) {
+  .card-a07__body p {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
