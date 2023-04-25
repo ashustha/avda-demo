@@ -1110,6 +1110,9 @@ p:last-child {
   color: #9E9E9E;
 }
 
+.solving-complex-problem {
+  overflow: hidden;
+}
 @media only screen and (max-width: 1200px) {
   .solving-complex-problem {
     padding-top: 100px;
@@ -1542,6 +1545,7 @@ p:last-child {
 .card-a07__body-logo {
   display: flex;
   gap: 28px;
+  flex-wrap: wrap;
 }
 .card-a07__body h5 {
   font-weight: 700;
